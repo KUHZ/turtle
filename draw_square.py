@@ -47,13 +47,18 @@ def draw():
     for i in range(1,73):
          draw_square(t1)
          t1.right(5)
-    
+    '''
     #draw circle
     t2 = turtle.Turtle()
     t2.shape("arrow")
     t2.color("blue")
-    t2.speed(2)
-    t2.circle(100)
+    t2.speed(100)
+    radius = 50
+    for i in range (1,73):
+        t2.circle(radius)
+        radius = radius + 1
+        t2.right(5)
+    
     '''
     #draw triangle
     t3  = turtle.Turtle()
@@ -64,7 +69,7 @@ def draw():
     for i in range(1,37):
          draw_triangle(t3)
          t3.right(10)
-    
+    '''
     
 
     window.exitonclick()
