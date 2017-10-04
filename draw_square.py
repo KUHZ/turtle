@@ -7,6 +7,7 @@ def draw_square():
     t1 = turtle.Turtle()
     t1.shape("turtle")
     t1.color("yellow","red")
+    t1.speed(2)
     
     t1.forward(100)
     t1.right(90)
